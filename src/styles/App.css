@@ -1,0 +1,4 @@
+.App {
+  display: grid;
+  grid-template-rows: 70px repeat(6, 100vh);
+}
