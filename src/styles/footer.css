@@ -1,4 +1,15 @@
 .footer {
-  background-color: darkgreen;
+  width: 100%;
+  bottom: 0;
+  background-color: #696969;
   color: white;
+  text-align: center;
 }
+
+hr {
+  border: 0; 
+  height: 2px; 
+  width: 20%;
+  background-image: linear-gradient(to right, rgba(41,41,41, 0), rgba(41,41,41, 0.75), rgba(41,41,41, 0));
+}
+
