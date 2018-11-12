@@ -1,4 +1,57 @@
-.profile {
-  background-color: blue;
+.section-features {
+  padding: 50px 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(140, 0, 26, 0.4),
+      rgba(140, 0, 26, 0.8)
+    ),
+    url(../imgs/pexels-photo-1036657.jpeg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -120px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
+}
+.section-features > * {
+  transform: skewY(7deg);
+}
+
+.attorney-header {
   color: white;
+  font-size: 50px;
+  grid-column: 5 / 8;
+  text-align: center;
+}
+
+.lawyer-profile {
+  height: 500px;
+  width: 500px;
+  grid-column: 8 / 11;
+  grid-row: 1 / 5;
+  margin-top: 300px;
+}
+
+.profile-name {
+  grid-column: 3 / 6;
+  grid-row: 2 / 3;
+  text-align: center;
+  color: white;
+}
+
+.prCases {
+  border: 0;
+  height: 2px;
+  width: 150px;
+  background-image: linear-gradient(
+    to right,
+    rgba(50, 0, 13, 0),
+    rgba(50, 0, 13, 0.75),
+    rgba(50, 0, 13, 0)
+  );
+}
+
+.profile-description {
+  font-size: 17px;
 }
