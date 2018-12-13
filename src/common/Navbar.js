@@ -103,9 +103,7 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
                       duration={500}
                     >
                       <NavLink to="#" className="NavLink">
-                        <strong className="navbtn">
-                          Practice Areas and Services
-                        </strong>
+                        <strong className="navbtn">Practice Areas</strong>
                       </NavLink>
                     </Link>
                   </NavItem>
