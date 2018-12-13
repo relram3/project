@@ -3,7 +3,9 @@
   background-image: url(https://imgur.com/GrygL3z.png);
 
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
