@@ -1,0 +1,27 @@
+.profile {
+  height: 60vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(140, 0, 26, 0.4),
+      rgba(140, 0, 26, 0.4)
+    ),
+    url(../imgs/architecture-buildings-business-167200.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tablist {
+  color: white;
+}
+
+.tabdesc {
+  width: 70%;
+}
+
+.profile-title {
+  margin-top: 20px;
+  color: white;
+  font-weight: 700;
+}

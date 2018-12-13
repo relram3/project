@@ -1,15 +1,165 @@
+@media screen and (max-width: 610px) {
+  .footer .centerLogo {
+    grid-column: 2 / span 3 !important;
+    justify-content: center;
+  }
+
+  #copyright {
+    font-size: 0.8em;
+  }
+  .contact #verticalContact {
+    font-size: 0.5em;
+    padding-left: 3px;
+  }
+
+  .contact #otherContacts1 {
+    font-size: 0.7em;
+  }
+  .contact .otherContacts {
+    font-size: 0.7em;
+  }
+  .contact #otherContacts2 {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  #copyright {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  #copyright {
+    font-size: 0.7em;
+  }
+  .contact #verticalContact {
+    font-size: 0.5em;
+  }
+
+  .contact #otherContacts1 {
+    font-size: 0.6em;
+  }
+  .contact .otherContacts {
+    font-size: 0.6em;
+  }
+  .contact #otherContacts2 {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 524px) {
+  #copyright {
+    font-size: 0.6em;
+  }
+  .contact #verticalContact {
+    font-size: 0.5em;
+  }
+
+  .contact #otherContacts1 {
+    font-size: 0.6em;
+  }
+  .contact .otherContacts {
+    font-size: 0.6em;
+  }
+  .contact #otherContacts2 {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  #copyright {
+    font-size: 0.55em;
+  }
+  .contact #verticalContact {
+    font-size: 0.4em;
+  }
+
+  .contact #otherContacts1 {
+    font-size: 0.5em;
+  }
+  .contact .otherContacts {
+    font-size: 0.5em;
+  }
+  .contact #otherContacts2 {
+    font-size: 0.5em;
+  }
+}
+
 .footer {
+  /* background-color: white; */
+  display: grid;
+  grid-template-columns: 20fr 60fr 20fr;
+  max-height: 15vh;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2367001a' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 20fr 10fr 40fr 30fr;
+  grid-template-rows: 20fr 14fr 14fr 14fr 14fr 20fr;
+  padding-left: 2%;
+}
+
+#verticalContact {
+  grid-row: 2 / span 4;
+  grid-column: 2 / 3;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  align-self: center;
+  font-size: 0.6em;
+  font-family: "Libre Baskerville", serif;
+  font-weight: Bold;
+  color: rgba(103, 0, 26, 1);
+}
+
+.otherContacts {
+  /* grid-row: 2 / span 5; */
+  grid-column: 3 / 4;
+  font-size: 0.8em;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  color: rgba(103, 0, 26, 1);
+}
+#otherContacts1 {
+  grid-column: 3 / 4;
+  font-size: 0.8em;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  color: rgba(103, 0, 26, 1);
+}
+
+#otherContacts2 {
+  grid-column: 3 / 4;
+  font-size: 0.8em;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  color: rgba(103, 0, 26, 1);
+}
+
+.centerLogo {
+  /* background-image: url("../images//logos/LOGO-01.png"); */
+  grid-column: 2 / 2;
+  display: grid;
+  max-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.logoTag {
+  display: grid;
+  background-image: url("../images//logos/LOGO-01.png");
+  background-size: 100% 100%;
+  font-size: 0.6em;
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  height: 100%;
   width: 100%;
-  bottom: 0;
-  background-color: white;
-  color: #696969;
-  text-align: center;
+  align-content: flex-end;
+  color: rgba(103, 0, 26, 1);
 }
 
-hr {
-  border: 0; 
-  height: 2px; 
-  width: 20%;
-  background-image: linear-gradient(to right, rgba(41,41,41, 0), rgba(41,41,41, 0.75), rgba(41,41,41, 0));
+#copyright {
+  vertical-align: bottom;
+  color: rgba(103, 0, 26, 1);
 }
-

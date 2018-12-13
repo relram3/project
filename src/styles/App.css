@@ -1,4 +1,56 @@
+html,
+body {
+  width: 100%;
+  height: fit-content;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .App {
   display: grid;
-  grid-template-rows: 70px repeat(5, 100vh) 10vh;
+  grid-template-rows: 100vh 80vh auto-fit 1fr 15vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .App {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.line {
+  height: 3px;
+  width: 350px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.line-medium {
+  height: 3px;
+  width: 200px;
+  background: #8c001acc;
+  margin-bottom: 10px;
+}
+
+.line-medium-white {
+  height: 3px;
+  width: 200px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.line-small {
+  height: 3px;
+  width: 100px;
+  background: #8c001acc;
+  margin-bottom: 10px;
 }

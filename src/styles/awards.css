@@ -1,0 +1,15 @@
+.award-row {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(140, 0, 26, 0.342),
+    rgba(140, 0, 26, 0.5)
+  );
+}
+.award-image {
+  height: 140px;
+  width: 140px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

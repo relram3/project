@@ -1,18 +1,20 @@
 import React, { Component } from "react";
+import "../styles/header.css";
+
+import Navbar from "./Navbar";
+import Awards from "./Awards";
 
 class Header extends Component {
   render() {
     return (
       <header className="header">
-        <div className="header__text-box">
-          <h1 className="heading-primary">
-            <span className="heading-primary heading-primary--main">
-              Attorney
-            </span>
-            <span className="heading-primary heading-primary--sub">
-              for Immigration Law
-            </span>
-          </h1>
+        <Navbar />
+        <div className="header-gradient">
+          <div className="header-intro">
+            <h1 className="header-name">Bayarjargal Sereenen</h1>
+            <div className="line" />
+            <h3 className="header-tagline">Attorney for Immigration Law</h3>
+          </div>
         </div>
       </header>
     );

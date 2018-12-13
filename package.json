@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "mdbreact": "^4.8.3",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "react-scroll": "^1.7.10",
+    "react-tabs": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

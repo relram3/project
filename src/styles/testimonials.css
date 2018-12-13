@@ -1,81 +1,120 @@
-.section-stories {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(140, 0, 26, 0.4),
-      rgba(140, 0, 26, 0.8)
-    ),
-    url(../imgs/agreement-cellphone-certificate-958163.jpg);
-}
-.story {
-  width: 75%;
-  margin: 0 auto;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 3px;
-  padding: 3px;
-  padding-left: 90px;
-  font-size: 11px;
-  transform: skewX(-12deg);
-  color: white;
-}
-.story__shape {
-  width: 50px;
-  height: 50px;
-  float: left;
-  transform: translateX(-30px) skewX(12deg);
-  position: relative;
-  border-radius: 50%;
-  padding: 8px;
-}
-
-.story__img {
+.testimonials {
+  grid-row: 4 / 5;
+  justify-content: center;
+  color: #3b1c1c;
+  background-color: rgb(255, 0, 0, 0.21);
   height: 100%;
-  transform: translateX(-40px) scale(1.4);
-  backface-visibility: hidden;
-  transition: all 0.5s;
 }
 
-.story__text {
-  transform: skewX(12deg);
-}
-
-.story__caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 20%);
-  color: white;
-  text-transform: uppercase;
-  font-size: 17px;
-  text-align: center;
-  opacity: 0;
-  transition: all 0.5s;
-  backface-visibility: hidden;
-}
-
-.story:hover .story__caption {
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
-
-.story:hover .story__img {
-  transform: translateX(-40px) scale(1);
-  filter: blur(3px) brightness(80%);
-}
-
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.row:not(:last-child) {
+.testimonials-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
-}
-.far {
-  font-size: 58px;
+  font-weight: 700;
+  padding-top: 30px;
 }
 
-.heading-secondary {
+.testimonials-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  padding-bottom: 30px;
+}
+
+.card-1 {
+  grid-column: 2 / 3;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-2 {
+  grid-column: 3 / 4;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-3 {
+  grid-column: 4 / 5;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-1-header {
+  font-size: 16px;
+  color: #3b1c1c;
+  font-weight: 500;
+}
+
+.card-1-paragraph {
   text-align: center;
-  color: white;
+  color: #3b1c1c;
+  width: 275px;
+}
+
+.eye-svg {
+  height: 70px;
+  width: 70px;
+  fill: #8c001acc;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+  .card-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+  .card-2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+  .card-3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
+  .card-1-header {
+    font-size: 14px;
+    color: #3b1c1c;
+    font-weight: 500;
+  }
+
+  .card-1-paragraph {
+    text-align: center;
+    color: #3b1c1c;
+    width: 400px;
+  }
+
+  .eye-svg {
+    height: 60px;
+    width: 60px;
+    fill: #8c001acc;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .testimonials-title-text {
+    font-size: 32px;
+  }
+
+  .card-1-paragraph {
+    text-align: center;
+    color: #3b1c1c;
+    width: 300px;
+  }
+
+  .eye-svg {
+    height: 45px;
+    width: 45px;
+    fill: #8c001acc;
+  }
 }
