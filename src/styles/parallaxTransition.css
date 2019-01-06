@@ -1,0 +1,11 @@
+.paraTransition {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #fff, #8c001acc),
+    url(https://images.pexels.com/photos/36369/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-blend-mode: soft-light;
+}
+
+.paraWrapper {
+  height: 70vh;
+}

@@ -19,8 +19,10 @@ import { Element } from "react-scroll";
 import Header from "./common/Header";
 import Profile from "./common/Profile";
 import Testimonials from "./common/Testimonials";
+import Awards from "./common/Awards";
 import Footer from "./components/Footer";
 import PracticeAreas from "./components/PracticeAreas";
+import ParallaxTransition from "./common/ParallaxTransition";
 
 class App extends Component {
   render() {
@@ -32,9 +34,11 @@ class App extends Component {
         <Element name="practiceAreas">
           <PracticeAreas />
         </Element>
+        <ParallaxTransition />
         <Element name="profile">
           <Profile />
         </Element>
+        <Awards />
         <Element name="testimonials">
           <Testimonials />
         </Element>

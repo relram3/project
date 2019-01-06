@@ -1,7 +1,9 @@
 .header {
   height: 100vh;
   background-image: url(https://imgur.com/GrygL3z.png);
+}
 
+.parallax {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
